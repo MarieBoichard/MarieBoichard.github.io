@@ -41,17 +41,16 @@ body {
 #header-title {
   display: block;
   float: left;
-
   margin-left: 10px;
   font-size: 32px;
   font-weight: bold;
+
+  flex-shrink: 1;
 }
 
 #header-nav {
   float: right;
-  margin-top: 40px;
-  height : 70px;
-
+  height : 120px;
   font-size: 20px;
 
   display: flex;
@@ -62,16 +61,13 @@ body {
 
 #header-nav li {
   display: inline;
-  padding-left: 50px;
-  margin : 0 20px 0 20px;
-  text-align: center;
+  margin : auto;
 
-  flex-grow: 1;
-  flex-shrink: 5;
+  flex-shrink: 1;
 }
 
 #header-nav a {
-  border: solid 2px white; padding: 10px;
+  border: solid 2px white; padding: 6px 10px 8px 10px;
 }
 
 .post-container {
@@ -110,7 +106,7 @@ border-bottom: 0;
 }
 
 a {
-  color: #1abc9c;
+  color: #145A32;
   text-decoration: none;
   margin: 20px;
 }
@@ -132,8 +128,12 @@ a:hover {
 }
 
 #content .post-container {
-  position: relative;
-  height: 600px;
+  height: 850px;
+}
+
+#content {
+  text-align: center;
+  min-height: 850px;
 }
 
 .post-author img {
@@ -142,20 +142,7 @@ a:hover {
   border: solid 2px #196F3D; padding: 5px;
   filter: opacity(80%);
   z-index: 1;
-
-  position: absolute;
-  left: 500px;
-  right: 500px;
 }
-
-
-.post-author span {
-  margin-left: 16px;
-}
-
-.post {
-}
-
 
 h1, h2, h3 {
   color: white;
@@ -189,10 +176,10 @@ p {
   z-index: 2;
   padding: 10px 0 10px 0;
   width: 290px;
-  color: white;
   display: none;
-  margin: 490px 340px;
-
+  margin: auto;
+  margin-top: -500px;
+  width: 50%;
 }
 
 .post:hover .post-title {
