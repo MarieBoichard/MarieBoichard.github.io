@@ -2,6 +2,7 @@
 );
 
 * {
+
 }
 
 body {
@@ -10,14 +11,18 @@ body {
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.01em;
   background-color: black;
-   background-size: cover;
+  background-image: url("marie8crop.jpg");
+  background-size: 82% auto;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #header {
-  height: 200px;
+  height: 120px;
   line-height: 120px;
   position: sticky;
   top: -20px;
+  z-index: 1;
 }
 
 #header .post-container {
@@ -55,7 +60,6 @@ body {
   margin-left: 10px;
   font-weight: bold;
   margin: 0;
-
   flex-shrink: 1;
 }
 
@@ -88,11 +92,9 @@ body {
 
 #footer {
 text-align: center;
+position: sticky;
 bottom: -20px;
-left: 0;
-right: 0;
-
-
+padding-bottom: 25px;
 }
 
 #footer h4 {
@@ -142,6 +144,58 @@ justify-content: space-around;}
 #content {
   text-align: center;
   max-height: 500px;
+}
+
+.formulaire {
+position: fixed;
+right: 150px;
+}
+
+#name {
+  width: 300px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  padding: 5px;
+  border: solid 2px white;
+  filter: opacity(60%);
+
+}
+
+#mail {
+  width: 300px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  padding: 5px;
+  border: solid 2px white;
+  filter: opacity(60%);
+
+}
+
+#message {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  border-radius: 5px;
+  border: solid 2px white;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  filter: opacity(60%);
+
+}
+
+button {
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 20px;
+  border: solid 3px white;
+  padding: 5px 10px;
+  font-family: 'Lato', sans-serif;
+  filter: opacity(60%);
+
 }
 
 .post-author img {
