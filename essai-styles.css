@@ -15,7 +15,7 @@ body {
 }
 
 #header {
-  height: 600px;
+  height: 640px;
   line-height: 120px;
   position: sticky;
   top: -20px;
@@ -98,7 +98,7 @@ body {
 text-align: center;
 position: sticky;
 bottom: -20px;
-padding-bottom: 25px;
+padding-bottom: 15px;
 left: 0;
 right: 0;
 }
